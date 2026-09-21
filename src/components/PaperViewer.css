@@ -1,0 +1,79 @@
+.paper-viewer {
+  margin-top: 1.2rem;
+}
+
+.paper-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.paper-toolbar button,
+.paper-open {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--line-strong);
+  background: var(--paper-2);
+  color: var(--ink);
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.paper-toolbar button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.paper-toolbar button:not(:disabled):hover,
+.paper-open:hover {
+  border-color: var(--teal);
+  color: var(--teal-deep);
+}
+
+.paper-counter {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+  min-width: 7.5rem;
+}
+
+.paper-stage {
+  background: #d8d2c6;
+  border: 1px solid var(--line);
+  padding: 0.8rem;
+  min-height: 20rem;
+  overflow-x: auto;
+}
+
+.paper-stage .react-pdf__Document {
+  display: flex;
+  justify-content: center;
+}
+
+.paper-stage .react-pdf__Page {
+  box-shadow: 0 8px 28px rgba(28, 36, 48, 0.18);
+  background: #fff;
+}
+
+.paper-stage .react-pdf__Page canvas {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.paper-status {
+  margin: 2rem 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.paper-status.error { color: var(--ruled); }
+
+@media (max-width: 600px) {
+  .paper-stage { padding: 0.4rem; }
+}
