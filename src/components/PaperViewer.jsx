@@ -75,9 +75,6 @@ export default function PaperViewer() {
       </div>
 
       {error ? <p className="paper-status error">{error}</p> : null}
-      <p className="caption">
-        Self-hosted viewer (react-pdf / pdf.js). No Google Docs iframe — the file is served from this site.
-      </p>
     </div>
   )
 }

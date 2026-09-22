@@ -384,7 +384,6 @@ export default function App() {
         <section className="section" id="limits">
           <div className="wrap">
             <p className="kicker">Limitations</p>
-            <h2>Be upfront about what this is not</h2>
             <ul className="limit-list">
               <li>Only 44 non-continuous days of ground truth, not a full year</li>
               <li>
@@ -405,11 +404,6 @@ export default function App() {
           <div className="wrap">
             <p className="kicker">Read the paper</p>
             <h2>Embedded viewer — no download required</h2>
-            <p>
-              The full paper is rendered on this page with react-pdf (Mozilla pdf.js).
-              Use previous/next to move through pages; the viewer scales to the
-              available width on mobile.
-            </p>
             <Suspense fallback={<p className="muted">Loading paper viewer…</p>}>
               <PaperViewer />
             </Suspense>
